@@ -12,29 +12,37 @@
 
         <h1>Stock</h1>
 
-        <h3>Cameras</h3>
-
-        <script>
-            function myFunction() {
-    var StockValue = document.getElementById("StockAmount1");
-    var isChecked = document.getElementById("8MPCheck");
-        if (isChecked.checked) {
-        document.getElementById("StockText1").innerText = StockValue.value;
-        }
-        else {
-            StockPlaceHolder.value =" ";
-        }
-}
-        </script>
-
 <form action="https://formsubmit.co/robbie@nexustechsolutions.co.uk" method="POST">
-  <label for="8MP-BLACK-CAMERA">8 MP - Black:</label>
-  <input type="text" id="StockAmount1" name="8MP-BLACK-CAMERA"> <div id="StockText1"></div>
-  <input type="checkbox" id="8MPCheck">
-  <br><br>
-  <label for="6MP-BLACK-CAMERA">6MP BLACK CAMERA:</label>
-  <input type="text" id="StockAmount2" name="6MP/BLACK"><br><br>
-  <input onclick="myFunction()" type="button" value="Update">
+    <h3>Cameras</h3>
+        <label for="8MP/Black">8MP Black:</label>
+        <input type="text" id="StockAmount1" name="8MP/BLACK"><br>
+
+        <label for="8MP/Black">8MP White:</label>
+        <input type="text" id="StockAmount1" name="8MP/WHITE"><br>
+
+        <label for="6MP-/Black">6MP Black:</label>
+        <input type="text" id="StockAmount2" name="6MP/BLACK"><br>
+
+        <label for="">2MP White ColorVu: </label>
+        <input type="text" id="StockAmount2" name="2MP/ColorVu"><br>
+
+    <h3>NVRs</h3>
+        <label for="4P/NVR/K">4P NVR (K):</label>
+        <input type="text" id="StockAmount1" name="4P/NVR/(K)"><br>
+
+        <label for="8P/NVR/(I)">8P NVR (I):</label>
+        <input type="text" id="StockAmount1" name="8P/NVR/(I)"><br>
+
+        <label for="16P/NVR">16P NVR:</label>
+        <input type="text" id="StockAmount2" name="16P/NVR"><br>
+
+        <h3>MISC</h3>
+        <label for="Powerlines">Powerline Adapaters (Boxes):</label>
+        <input type="text" id="StockAmount2" name="PowerlineAdapter"><br>
+        <label for="TendaInjectors">Tenda Injectors:</label>
+        <input type="text" id="StockAmount2" name="TendaPOEInjectors"><br>
+
+  <input onclick="" type="button" value="Update">
   <input type="submit" Value ="SEND">
 </form>
 
