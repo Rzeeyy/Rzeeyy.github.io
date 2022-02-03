@@ -1,7 +1,58 @@
-<html>
- 
-<body>
-  <video controls src="filtered-DD808476-0636-4464-A68D-7881FDB9DFB0.MP4"></video>
-</body>
- 
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Stock</title>
+        <meta name="description" content="My Page Description">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <h1>Stock</h1>
+
+        <h3>Cameras</h3>
+
+        <script>
+            function myFunction() {
+    var StockValue = document.getElementById("StockAmount1");
+    var isChecked = document.getElementById("8MPCheck");
+        if (isChecked.checked) {
+        document.getElementById("StockText1").innerText = StockValue.value;
+        }
+        else {
+            StockPlaceHolder.value =" ";
+        }
+}
+        </script>
+
+<form action="/action_page.php">
+  <label for="fname">8 MP - Black:</label>
+  <input type="text" id="StockAmount1" name="fname"> <div id="StockText1"></div>
+  <input type="checkbox" id="8MPCheck">
+  <br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input onclick="myFunction()" type="button" value="Update">
+</form>
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+    </body>
+
 </html>
